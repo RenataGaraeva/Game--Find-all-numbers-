@@ -60,14 +60,8 @@ elem.addEventListener('click', function() {
     choosedNumbersMassive.push(+this.value)
     choosedNumbersMassive.sort(function (a,b) {
      return a - b})
-    /*
-  result.innerHTML = 'Молодцы';
-  */
     this.classList.add('green');
  } else {
-/*
-    result.innerHTML = 'Попробуйте ещё раз';
-    */
    this.classList.add('red')
  }
  
@@ -90,25 +84,6 @@ timer.addEventListener('click', function () {
       clearInterval(timerId);
       timer.textContent = "Время закончилось";
     }
-   
-   /*
-      let oneNumber = 0;
-      
-      while (oneNumber <= 7) {
-      if (choosedNumbersMassive[oneNumber] === massive[oneNumber]) {
-         clearInterval(timerId)
-         timer.textContent = "Молодец";
-      }
-      }
-    
-*/
-  /*
-     for (let oneNumber = 0; oneNumber < choosedNumbersMassive.length; oneNumber++) {
-       /*
-            if (choosedNumbersMassive[oneNumber] === massive[oneNumber]) 
-            
-       if (choosedNumbersMassive.includes(massive[oneNumber])) 
-      */
 
  if (choosedNumbersMassive[0] == massive[0] && choosedNumbersMassive[1] == massive[1] && choosedNumbersMassive[2] == massive[2] && choosedNumbersMassive[3] == massive[3] && choosedNumbersMassive[4] == massive[4] && choosedNumbersMassive[5] == massive[5] && choosedNumbersMassive[6] == massive[6] && choosedNumbersMassive[7] == massive[7] && choosedNumbersMassive[8] == massive[8]  && choosedNumbersMassive[9] == massive[9]) {
         clearInterval(timerId);
